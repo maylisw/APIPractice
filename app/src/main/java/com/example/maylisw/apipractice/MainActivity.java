@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         UINames api = retrofit.create(UINames.class);
 
-        Call<List<People>> call = api.getNumberOfPeople(15, "France");
+        Call<List<People>> call = api.getNumberOfPeople(25, "France");
         call.enqueue(new Callback<List<People>>() {
             @Override
             public void onResponse(Call<List<People>> call, Response<List<People>> response) {
